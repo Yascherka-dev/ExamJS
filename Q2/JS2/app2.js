@@ -7,37 +7,21 @@ let tva = document.getElementById("tva")
 let ttc = document.getElementById("ttc")
 
 opt1.onclick = function () {
-    let totalTva = Number((ht.value) * 2.1 / 100)
-    let totalTtc = Number((ht.value) + Number(totalTva));
-    console.log("totalTva")
-    console.log("totalTtc")
-    tva.innerHTML = totalTva;
-    ttc.innerHTML = totalTtc;
+    tva.innerHTML = Number((ht.value) * 2.1 / 100);
+    ttc.innerHTML = Number((ht.value) * (2.1 / 100) + Number(ht.value));
 }
 
 opt2.onclick = function () {
-    let totalTva = Number((ht.value) * 5.5 / 100)
-    let totalTtc = Number((ht.value) + Number(totalTva));
-    console.log("totalTva")
-    console.log("totalTtc")
-    tva.innerHTML = totalTva;
-    ttc.innerHTML = totalTtc;
+    tva.innerHTML = Number((ht.value) * 5.5 / 100);
+    ttc.innerHTML = Number((ht.value) * (5.5 / 100) + Number(ht.value));
 }
 
 opt3.onclick = function () {
-    let totalTva = Number((ht.value) * 10 / 100)
-    let totalTtc = Number((ht.value) + Number(totalTva));
-    console.log("totalTva")
-    console.log("totalTtc")
-    tva.innerHTML = totalTva;
-    ttc.innerHTML = totalTtc;
+    tva.innerHTML = Number((ht.value) * 10 / 100);
+    ttc.innerHTML = Number((ht.value) * (10 / 100) + Number(ht.value));
 }
 
 opt4.onclick = function () {
-    let totalTva = Number((ht.value) * 20 / 100)
-    let totalTtc = Number((ht.value) + Number(totalTva));
-    console.log("totalTva")
-    console.log("totalTtc")
-    tva.innerHTML = totalTva;
-    ttc.innerHTML = totalTtc;
+    tva.innerHTML = Number((ht.value) * 20 / 100)
+    ttc.innerHTML = Number((ht.value) * (20 / 100) + Number(ht.value));
 }
